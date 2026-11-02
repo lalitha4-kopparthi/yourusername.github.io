@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kopparthi Sai Lalitha | Portfolio</title>
+  <meta name="description" content="Portfolio of Kopparthi Sai Lalitha, aspiring Software Developer and B.Tech graduate.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #f1f5f9;
+      line-height: 1.7;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #111827;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      border-bottom: 1px solid #263247;
+    }
+
+    .logo {
+      color: #818cf8;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #818cf8;
+    }
+
+    section {
+      padding: 80px 10%;
+      scroll-margin-top: 65px;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      background: linear-gradient(120deg, #111827, #172554);
+    }
+
+    .hero h3 {
+      color: #a5b4fc;
+      font-size: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 55px);
+      margin: 12px 0;
+    }
+
+    .hero h2 {
+      color: #818cf8;
+      font-size: 27px;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      max-width: 650px;
+      margin: 18px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #6366f1;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 7px;
+      text-decoration: none;
+      margin-top: 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .btn:hover {
+      background: #4f46e5;
+    }
+
+    .section-title {
+      font-size: 32px;
+      color: #818cf8;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .about p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      color: #cbd5e1;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card, .project-card, .info-card {
+      background: #172033;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #29364c;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover, .project-card:hover {
+      transform: translateY(-5px);
+      border-color: #818cf8;
+    }
+
+    .skill-card h3 {
+      color: #a5b4fc;
+    }
+
+    .project-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card h3 {
+      color: #a5b4fc;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      color: #cbd5e1;
+    }
+
+    .info-card {
+      max-width: 700px;
+      margin: auto;
+      color: #cbd5e1;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px;
+    }
+
+    .contact a {
+      color: #a5b4fc;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #111827;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0;
+        font-size: 12px;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+
+      .hero {
+        min-height: 75vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Sai Lalitha.</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section class="hero" id="home">
+    <h3>Hello, I'm</h3>
+    <h1>Kopparthi Sai Lalitha</h1>
+    <h2>Aspiring Software Developer</h2>
+
+    <p>
+      I am a B.Tech graduate and a passionate fresher
+      interested in software development, programming
+      and learning new technologies. I am looking for
+      an opportunity to start my professional career
+      in the IT industry.
+    </p>
+
+    <a href="#projects" class="btn">Explore My Projects</a>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+      My name is Kopparthi Sai Lalitha. I am a B.Tech
+      graduate seeking an entry-level Software Developer
+      position. I have knowledge of HTML, CSS and Python.
+      I am interested in building applications, solving
+      problems and continuously improving my technical
+      skills. My goal is to contribute to an organization
+      while growing as a software professional.
+    </p>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2 class="section-title">My Technical Skills</h2>
+
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <p>Web page structure</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <p>Web page styling</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Python</h3>
+        <p>Programming basics</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-container">
+
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>
+          Add your first academic or personal project
+          description, technologies and project link here.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>
+          Add your second project details, what you built
+          and which programming languages you used.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>
+          Add another project that demonstrates your
+          programming and problem-solving skills.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="info-card">
+      <h3>Bachelor of Technology (B.Tech)</h3>
+      <p>Branch: Add your engineering branch</p>
+      <p>College: Add your college name</p>
+      <p>Graduation Year: Add your graduation year</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>I'm open to entry-level Software Developer opportunities.</p>
+
+    <p>Email:
+      <a href="mailto:YOUR_EMAIL@example.com">
+        YOUR_EMAIL@example.com
+      </a>
+    </p>
+
+    <p>LinkedIn:
+      <a href="https://www.linkedin.com/" target="_blank">
+        My LinkedIn Profile
+      </a>
+    </p>
+
+    <p>GitHub:
+      <a href="https://github.com/" target="_blank">
+        My GitHub Profile
+      </a>
+    </p>
+
+    <a href="mailto:YOUR_EMAIL@example.com" class="btn">
+      Contact Me
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Kopparthi Sai Lalitha. All Rights Reserved.</p>
+    <p>Designed with HTML, CSS and JavaScript.</p>
+  </footer>
+
+</body>
+</html>
